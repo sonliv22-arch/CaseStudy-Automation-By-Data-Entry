@@ -134,7 +134,7 @@ if st.session_state.Case_Study_Template_1:
         st.success("🎉 PPT Template-1 generated successfully!")
 
 if ppt1_bytes:
-    file_name = f"Template1_{plant_name.replace(' ','_')}.pptx"
+    file_name = f"{equipment_name.replace(' ','_')}_{plant_name.replace(' ','_')}.pptx"
     st.download_button("⬇️ Download PPT Template-1", ppt1_bytes, file_name=file_name,
                        mime="application/vnd.openxmlformats-officedocument.presentationml.presentation")
 
@@ -187,6 +187,6 @@ if st.session_state.Case_Study_Template_2:
         st.success("🎉 PPT Template-2 generated successfully!")
 
 if ppt2_bytes:
-    file_name = f"Template2_{plant_name2.replace(' ','_')}.pptx"
+    file_name = f"{equipment_name2.replace(' ','_')}_{plant_name2.replace(' ','_')}.pptx"
     st.download_button("⬇️ Download PPT Template-2", ppt2_bytes, file_name=file_name,
                        mime="application/vnd.openxmlformats-officedocument.presentationml.presentation")
